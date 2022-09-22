@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Facebook POM framework]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.qa.extentreportlistner.ExtentReporterNG"/>
+    <listener class-name="com.qa.screenshot.Listener"/>
+  </listeners>
+  <test thread-count="5" name="Facebook App Testcases(failed)">
+    <classes>
+      <class name="com.qa.testcases.LoginTestcase">
+        <methods>
+          <include name="FBemailTest"/>
+          <include name="loginTest"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.qa.testcases.LoginTestcase -->
+      <class name="com.qa.testcases.HomePageTest">
+        <methods>
+          <include name="addpictureTest"/>
+          <include name="tearDown"/>
+          <include name="SearchboxTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.testcases.HomePageTest -->
+    </classes>
+  </test> <!-- Facebook App Testcases(failed) -->
+</suite> <!-- Failed suite [Facebook POM framework] -->

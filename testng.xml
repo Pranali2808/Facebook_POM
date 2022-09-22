@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Facebook POM framework">
+  
+  <listeners>
+  <listener class-name="com.qa.extentreportlistner.ExtentReporterNG"/>
+  <listener class-name="com.qa.screenshot.Listener"/>
+  </listeners>
+  
+  <test thread-count="5" name="Facebook App Testcases">
+    <classes>
+      <class name="com.qa.testcases.SignupTestcase"/>
+      <class name="com.qa.testcases.HomePageTest"/>
+      <class name="com.qa.testcases.LoginTestcase"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
